@@ -1,0 +1,45 @@
+.content {
+  &__inner {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    @include list-unstyle;
+  }
+
+  &__item {
+    display: flex;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.247px;
+    color: $san-blue;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 635px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: $light-blue;
+  }
+}

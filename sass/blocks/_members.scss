@@ -1,0 +1,47 @@
+.members {
+  &__inner {
+    margin-bottom: 72px;
+  }
+
+  &__list {
+    display: flex;
+    @include list-unstyle;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $san-blue;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+
+  &__content {
+    padding-top: 17px;
+    border-top: 1px solid $san-blue;
+    border-bottom: 1px solid $san-blue;
+    padding-bottom: 17px;
+  }
+
+  &__span {
+    display: block;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.44px;
+    color: $pink;
+  }
+}

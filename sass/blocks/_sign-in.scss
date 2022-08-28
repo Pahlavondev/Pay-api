@@ -1,0 +1,17 @@
+.sign-in {
+  &__inner {
+    // display: flex;
+    // align-items: center;
+    margin-bottom: 96px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    color: $san-blue;
+  }
+}

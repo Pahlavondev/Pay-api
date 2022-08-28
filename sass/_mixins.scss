@@ -1,0 +1,25 @@
+@mixin list-unstyle {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin red-button {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.116px;
+  color: $white;
+  padding: 16px 24.5px 14px 26.5px;
+  text-decoration: none;
+  background-color: $pink;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  transition: all 0.5s ease;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $charm-pink;
+  }
+}

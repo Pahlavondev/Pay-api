@@ -1,0 +1,19 @@
+.hero {
+  &__content {
+    width: 100%;
+    max-width: 664px;
+    margin-left: 96px;
+    margin-top: 82px;
+    margin-bottom: 51px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.43px;
+    color: $san-blue;
+  }
+}
