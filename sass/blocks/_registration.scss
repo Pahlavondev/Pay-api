@@ -31,7 +31,14 @@
   }
 
   &__span {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #ff0000;
     opacity: 0;
+  }
+
+  &__label:hover {
+    cursor: pointer;
   }
 
   &__wrapper {

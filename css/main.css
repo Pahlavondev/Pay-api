@@ -693,7 +693,13 @@ body {
   padding-bottom: 64px;
 }
 .registration__span {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #ff0000;
   opacity: 0;
+}
+.registration__label:hover {
+  cursor: pointer;
 }
 .registration__wrapper {
   display: flex;
