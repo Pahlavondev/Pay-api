@@ -5,6 +5,21 @@
     padding-top: 40px;
   }
 
+  &__menu {
+    width: 28px;
+    height: 17px;
+    background-image: url(../../images/menu-open.svg);
+    @include menu-button;
+    background-color: red;
+  }
+
+  &__close {
+    width: 22px;
+    height: 22px;
+    background-image: url(../../images/menu-close.svg);
+    @include menu-button;
+  }
+
   &__link {
     @include red-button;
   }

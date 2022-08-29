@@ -24,3 +24,13 @@
     background-color: $charm-pink;
   }
 }
+
+@mixin menu-button {
+  padding: 0;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
