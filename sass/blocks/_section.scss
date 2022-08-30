@@ -1,0 +1,259 @@
+.prices{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+
+    &__plan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    &__title{
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        color: $pink;
+        margin-bottom: 80px;
+
+    }
+    &__text{
+        display: none;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color:$san-blue;
+    }
+
+    &__number{
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 72px;
+        color: $san-blue;
+    }
+
+    &__item{
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $san-blue;
+        
+    }
+
+    &__list{
+        width: 134px;
+        height: 100%;
+    }
+
+            
+
+    &__link{
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: $san-blue;
+        padding: 15px 28px;
+        border: 1px solid $san-blue;
+        border-radius: 30px;
+    }
+
+    &__bottom{
+        margin-top: 80px;
+    }
+
+    &__button{
+        @include red-button;
+        border: none;
+        margin-top: 16px;
+        width: 100%;
+    }
+    &__title-h2{
+        font-family: 'DM Serif Display';
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        color: #36536B;
+    }
+    
+}
+
+hr{
+    height: 1px;
+    width: 100%;
+    color: $san-blue;
+    opacity: 0.25;
+    margin: 24px 0;
+}
+
+
+
+.befores::before{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 8px;
+            background-image: url(../../images/path3.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center;
+            margin-right: 24px;
+}
+
+input{
+    width: 100%;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 80px;
+    z-index: -10;
+    margin-top: 32px;
+}
+
+h1{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: $san-blue;
+    margin-top: 48px;
+    
+}
+
+
+
+
+@media only screen and (min-width: 580px){
+    .prices{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+        &__title{
+            font-size: 25px;
+        }
+
+        &__number{
+            font-size: 44px;
+        }
+
+        &__link{
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 765px){
+    
+
+    .prices{
+        &__plan{
+            margin-right: 10px;
+
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+    
+        &__title{
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+        &__text{
+            display: inline-block;
+            text-align: center;
+        }
+
+        &__number{
+            font-size: 48px;
+        }
+
+        &__link{
+            font-size: 15px;
+        }
+       
+        &__input{
+            width: 445px;
+            
+        }
+        &__box{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__button{
+            width: 173px;
+            height: 48px;
+            padding: 15px 25px;
+            position: absolute;
+            left: 58%;
+            top: 15px;
+            
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1100px ){
+
+    .prices{
+
+        &__plan{
+            display: flex;
+            
+            align-items: flex-start;
+        }
+        &__title{
+            font-size: 32px;
+            text-align: start;
+        }
+
+        &__text{
+            text-align: start;
+        }
+
+        &__number{
+            font-size: 56px;
+        }
+
+        &__link{
+            font-size: 15px;
+        }
+
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__button{
+            left: 61%;
+        }
+    }
+
+    h1{
+        font-size: 56px;
+        text-align: start;
+        margin-top: 82px !important;
+        margin-bottom: 60px !important;
+    }
+}

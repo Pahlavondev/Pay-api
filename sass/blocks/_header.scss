@@ -7,10 +7,16 @@
 
   &__link {
     @include red-button;
+    display: none;
+  }
+
+  &__open{
+      margin-left: auto;
   }
 }
 
 .nav {
+  display: none;
   margin-right: auto;
   margin-left: 64px;
 
@@ -42,3 +48,65 @@
     opacity: 1;
   }
 }
+
+
+
+@media only screen and (min-width: 580px){
+  .nav{
+    display: inline-block;
+    margin-left: 50px;
+
+    &__link{
+      font-size: 0.8em;
+    }
+  }
+
+  .site-header{
+    &__open{
+      display: none;
+    }
+    &__link{
+      display: inline-block;
+      font-size: 0.8em;
+      padding: 0.8em 0.8em 0.8em 0.8em;
+    }
+  }
+  
+}
+
+
+@media only screen and (min-width: 768px){
+  .nav{
+    &__link{
+      font-size: 1em;
+    }
+      
+   } 
+
+   .site-header{
+
+    &__link{
+      font-size: 1em;
+      padding: 1em;
+   }
+   }
+}
+
+@media only screen and (min-width: 1100px ){
+  .nav{
+    &__link{
+      font-size: 1em;
+    }
+      
+   } 
+
+   .site-header{
+
+    &__link{
+      font-size: 1em;
+      padding: 1em;
+   }
+   }
+}
+
+
