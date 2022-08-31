@@ -1,0 +1,46 @@
+.simple {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 146px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 445px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    color: $san-blue;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: $light-blue;
+  }
+
+  &__images {
+    width: 100%;
+    max-width: 566px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+  }
+}

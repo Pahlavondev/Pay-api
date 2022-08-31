@@ -1,0 +1,50 @@
+.site-hero {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    width: 100%;
+    max-width: 546px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.554px;
+    color: $san-blue;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $light-blue;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $light-blue;
+  }
+
+  &__footer {
+    margin-top: 16px;
+    margin-left: 27px;
+  }
+
+  &__right {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,42 @@
+.implement {
+  &__inner {
+    width: 100%;
+    max-width: 1015px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    background-color: $mirage-blue;
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+    border-radius: 8px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 445px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    color: $san-blue;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: $light-blue;
+  }
+}

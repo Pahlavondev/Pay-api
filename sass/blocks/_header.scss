@@ -1,5 +1,6 @@
 .site-header {
   &__inner {
+    position: relative;
     display: flex;
     align-items: center;
     padding-top: 40px;
@@ -10,14 +11,24 @@
     height: 17px;
     background-image: url(../../images/menu-open.svg);
     @include menu-button;
-    background-color: red;
+    display: none;
   }
 
   &__close {
+    cursor: pointer;
     width: 22px;
     height: 22px;
     background-image: url(../../images/menu-close.svg);
     @include menu-button;
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 64px;
+    flex-grow: 1;
   }
 
   &__link {
@@ -26,9 +37,6 @@
 }
 
 .nav {
-  margin-right: auto;
-  margin-left: 64px;
-
   &__list {
     display: flex;
     @include list-unstyle;
@@ -56,5 +64,64 @@
 
   &__link:hover {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .site-header {
+    &__wrapper {
+      transform: translateX(100%);
+      margin: 0;
+      flex-direction: column;
+      position: absolute;
+      justify-content: flex-start;
+      background-color: $san-blue;
+      top: 0;
+      right: 0;
+      max-width: 300px;
+      height: 100vh;
+      padding: 48px 24px;
+    }
+
+    &__wrapper--on {
+      transform: translateX(0%);
+    }
+
+    &__menu {
+      display: inline-block;
+    }
+
+    &__close {
+      align-self: flex-end;
+      display: inline-block;
+    }
+
+    &__link {
+      padding: 16px 36px 14px 38px;
+    }
+  }
+
+  .nav {
+    width: 100%;
+
+    &__list {
+      text-align: center;
+      margin-top: 24px;
+      border-top: 1px solid $white;
+      padding-top: 43px;
+      flex-direction: column;
+    }
+
+    &__item {
+      margin: 0;
+      margin-bottom: 32px;
+    }
+
+    &__link {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: $white;
+    }
   }
 }
