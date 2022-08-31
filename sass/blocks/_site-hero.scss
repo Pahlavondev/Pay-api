@@ -1,7 +1,11 @@
 .site-hero {
   &__inner {
-    display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 1015px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 74px;
   }
 
   &__left {
@@ -42,9 +46,9 @@
     margin-left: 27px;
   }
 
-  &__right {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
   }
 }
