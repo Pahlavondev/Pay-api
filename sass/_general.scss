@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   font-family: "Public Sans", "Arial", sans-serif;
   background-color: $main-color;
+  overflow-x: hidden;
 }
 
 .site-main {
