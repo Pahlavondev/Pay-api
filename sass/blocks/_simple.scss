@@ -44,3 +44,22 @@
     border-radius: 30px;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .simple {
+    &__inner {
+      flex-direction: column-reverse;
+      margin-bottom: 100px;
+    }
+
+    &__images {
+      margin-bottom: 48px;
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 573px;
+      text-align: center;
+    }
+  }
+}

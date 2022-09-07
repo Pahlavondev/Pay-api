@@ -40,3 +40,22 @@
     color: $light-blue;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .implement {
+    &__inner {
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+
+    &__image {
+      margin-bottom: 48px;
+    }
+
+    &__content {
+      width: 100%;
+      max-width: 573px;
+      text-align: center;
+    }
+  }
+}

@@ -81,3 +81,23 @@
     color: #ffffff;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .work {
+    &__inner {
+      flex-direction: column-reverse;
+      padding: 88px 0;
+      margin: 100px 0;
+    }
+
+    &__right {
+      margin-bottom: 64px;
+    }
+
+    &__left {
+      width: 100%;
+      max-width: 457px;
+      text-align: center;
+    }
+  }
+}

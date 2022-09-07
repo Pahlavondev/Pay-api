@@ -44,3 +44,16 @@
     @include red-button;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .sign-in {
+    &__inner {
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
