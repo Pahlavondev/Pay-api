@@ -380,7 +380,7 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -399,6 +399,14 @@ body {
   background-size: contain;
 }
 
+@media only screen and (max-width: 1024px) {
+  .site-wrapper {
+    background-image: url(../../images/tablet-wrapper.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+}
 .site-header {
   position: relative;
 }
@@ -529,10 +537,10 @@ body {
   }
 }
 .site-hero__inner {
+  display: flex;
   align-items: center;
   width: 100%;
   max-width: 1015px;
-  display: flex;
   justify-content: space-between;
   padding-top: 74px;
 }
@@ -576,7 +584,34 @@ body {
      object-position: center;
   border-radius: 40px;
 }
+.site-hero__wrapper {
+  margin-right: 0;
+}
 
+@media only screen and (max-width: 1024px) {
+  .site-hero__inner {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+  .site-hero__left {
+    margin-top: 48px;
+  }
+  .site-hero__title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.37px;
+    margin-bottom: 22px;
+  }
+  .site-hero__footer {
+    text-align: center;
+  }
+  .site-hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .work {
   background-color: #1b262f;
 }

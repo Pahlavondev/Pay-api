@@ -4,3 +4,12 @@
   background-position: top -50px right -30px;
   background-size: contain;
 }
+
+@media only screen and (max-width: 1024px) {
+  .site-wrapper {
+    background-image: url(../../images/tablet-wrapper.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+}
